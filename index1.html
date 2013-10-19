@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Первая страница моего первого сайта</title>
+    <link href="css/all.css?v=1.0" rel="stylesheet" type="text/css" >
   </head>
   <body>
     <a href="http://htmlbook.ru/samhtml">Самоучитель HTML4</a>
+    <input type="text" />
+    <input type="text" />
+
     <a href="imgs/31_main.jpg">Украина Футбол</a>
     <a href="/">Украина Футбол</a>
     <h1>Глава 3. Состав сборной Украины</h1>
@@ -13,13 +17,18 @@
     <ol>
       <li>ФК Металлист:
         <ul>
-          <li>Головский Эдмар</li>
+          <li id="best_winger1" class="winger"><span><a href="file.pdf">Головский Эдмар</a></span></li>
+          <li id="best_winger2" class="winger"><span><a href="file.mp3">Елена</a></span></li>
+          <li id="best_winger3" class="winger"><span class="kristy"><a href="file.txt">Кристина</a></span></li>
+          <li id="best_winger4" class="winger"><span>Илария</span></li>
         </ul>
       </li>
       <li>ФК Днепр:
         <ul>
-          <li>Коноплянка Е.</li>
-          <li>Ротань Руслан</li>
+          <li class="winger"><span>Коноплянка Е.</span></li>
+          <li><span>Виталий</span></li>
+          <li><span>Соня</span></li>
+          <li><span>Дмитрий</span></li>
         </ul>
       </li>
     </ol>
@@ -30,8 +39,8 @@
 
 
     <p>
-      
-       elit cras. <strong>Facilisis</strong>, scelerisque aliquam est cras porttitor augue,<br/> augue, porta, placerat ultrices elementum diam, <em>magna lectus elementum</em> cum &copy;est dis aenean? Nisi&nbsp;adipiscing odio sed dictumst &lt;&gt;facilisis turpis porttitor ultrices vel! Etiam urna&#1845; non cras tortor dis? Integer et sociis nunc ut nunc? Purus, rhoncus urna lorem? <img src="http://mklass.org/_images/logo.png" alt="Сборная Украниы по футболу" />Ut, lacus, lorem magnis eros, dictumst odio dis montes porttitor scelerisque tortor scelerisque rhoncus, placerat dis sed? Mid turpis ultrices, tincidunt pulvinar auctor et, magna turpis, porttitor. Et aliquet vel elementum lundium, a porta? Pulvinar ac, eu ultricies parturient sociis ultricies turpis.
+
+      elit cras. <strong>Facilisis</strong>, scelerisque aliquam est cras porttitor augue,<br/> augue, porta, placerat ultrices elementum diam, <em>magna lectus elementum</em> cum &copy;est dis aenean? Nisi&nbsp;adipiscing odio sed dictumst &lt;&gt;facilisis turpis porttitor ultrices vel! Etiam urna&#1845; non cras tortor dis? Integer et sociis nunc ut nunc? Purus, rhoncus urna lorem? <img src="http://mklass.org/_images/logo.png" alt="Сборная Украниы по футболу" />Ut, lacus, lorem magnis eros, dictumst odio dis montes porttitor scelerisque tortor scelerisque rhoncus, placerat dis sed? Mid turpis ultrices, tincidunt pulvinar auctor et, magna turpis, porttitor. Et aliquet vel elementum lundium, a porta? Pulvinar ac, eu ultricies parturient sociis ultricies turpis.
     </p>
     <table border="1">
       <caption>Таблица 1</caption>
@@ -59,6 +68,9 @@
         </tr>
       </tfoot>
     </table>
-    
+    <div id="dblock">
+      <div id="d1">Блок 1</div>
+      <div id="d2">Блок 2</div>
+    </div>
   </body>
 </html>

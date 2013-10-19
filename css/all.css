@@ -1,0 +1,70 @@
+/* Наша первая каскадная таблица стилей */
+/* Универсальный селектор */
+*{
+  color: red;
+  margin: 0px;
+}
+/* Селектор элементов (тегов) */
+li{
+  color: green;
+  padding-left: 50px;
+}
+/* Селектор классов */
+.winger span{
+  color: aquamarine;
+}
+.kristy{
+  background-color: yellow;
+}
+/* Селектор идентификаторов */
+#best_winger>span{
+  color: rgb(41, 255, 0);
+  background-color: yellow;
+}
+/* соседние селекторы */
+li+li+li>span{
+  background-color: lightskyblue;
+}
+/* Псевдоклассы */
+.winger span:hover{
+  background-color: blue;
+  color: white;
+}
+.winger span:active{
+  background-color: yellow;
+}
+input:focus{
+  background-color: lightsteelblue;
+  color: green;
+}
+td:first-child{
+  background-color: red;
+}
+
+/*a[href$=".mp3"]:before{
+  content: "";
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: url("../imgs/mp3.png");
+}*/
+a[href$=".mp3"]{
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background: url("../imgs/mp3.png") no-repeat left center;
+  box-sizing: border-box;
+  padding-left: 32px;
+}
+#dblock div{
+  border: 1px solid blue;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+}
+#d1{
+  margin: 100px;
+}
+#d2{
+  margin: 50px 100px;
+}
