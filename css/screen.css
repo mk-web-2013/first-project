@@ -1,15 +1,23 @@
 div{
   /*border: 1px solid black;*/
 }
-#wrapper{
-  width: 920px;
+#header > div,
+#main_content > div,
+#footer > div{
+  width: 1016px;
   margin: 0px auto;
 }
+#header{
+  background: url("../imgs/png/header_bg.png") center top no-repeat;
+}
+#header > div{
+  background: url("../imgs/png/common-menu-separator.png") left center no-repeat;
+  position: relative;
+  height: 355px;
+}
+
 #header .logo{
   float: left;
-}
-#header .menus{
-  
 }
 #header:after{
   content: "";
@@ -22,8 +30,9 @@ div{
 #header .menus > div{
   clear: right;
 }
-#header .menus ul{
+#header .menus > div > ul{
   float: right;
+  position: relative;
 }
 #header .main-menu ul{
   border-radius: 5px;
@@ -37,12 +46,17 @@ div{
 }
 .menus ul{
   text-align: right;
-  height: 36px;
+  /*height: 36px;*/
 }
 #header .common-menu li{
   background: url("../imgs/png/common-menu-separator.png") left center no-repeat;
   /*padding: 3px 15px;*/
 }
+#header .main-menu a{
+  color: #fff;
+  text-decoration: none;
+}
+
 #header .main-menu li,
 #header .common-menu li{
   padding: 0px 15px;
@@ -53,9 +67,51 @@ div{
   /*border-left: none;*/
   background: none;
 }
-#header .main-menu ul{
+#header .main-menu li{
+  padding-top: 5px;
+}
+#header .main-menu li > a{
+  display: block;
+  padding: 5px 5px 10px;
+  line-height: 20px;
+}
+#header .main-menu li:hover > a{
+  color: #3460a0;
+  background-color: #fff;
+  border-radius: 5px 5px 0px 0px; 
+}
+#header .main-menu > ul{
   background: url("../imgs/png/main-menu-bg.png") left top repeat-x;
 }
+#header .main-menu li > ul{
+  position: absolute;
+  display: none;
+  background: #1A447E;
+/*  left: 0px;
+  right: 0px;
+  text-align: center;*/
+}
+#header .main-menu li:hover > ul{
+  display: block; 
+}
+#header .main-menu li > ul > li{
+  display: block;
+  position: relative;
+}
+#header .main-menu li > ul ul{
+  left: 98%;
+  top: 0px
+}
+#curr-page{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 211px;
+  height: 94px;
+  background: url("../imgs/png/header_curr_page_bg.png") left center no-repeat;
+}
+/* ----------- */
+
 #sidebar{
   float: left;
   width: 158px;
@@ -63,6 +119,38 @@ div{
   margin-right: 10px;
   padding: 25px 13px 25px 25px;
 }
+#sidebar .menu{
+  position: relative;
+}
+#mi5{
+  background: #3460a0;
+  color: #fff;
+  position: relative;
+  left: 30px;
+  bottom: 50px;
+  z-index: 4;
+}
+#mi7{
+  background: yellow;
+  color: blue;
+  position: fixed;
+  left: 30px;
+  right: 150px;
+  bottom: 50px;
+  width: 100px;
+  z-index: 4;
+}
+#mi9{
+  background: blueviolet;
+  color: #fff;
+  position: absolute;
+  left: 30px;
+  right: 150px;
+  bottom: 50px;
+  width: 100px;
+  z-index: 4;
+}
+
 #content{
   overflow: hidden;
   margin: 10px;
@@ -70,8 +158,23 @@ div{
 /*#main_content{
   overflow: hidden;
 }*/
+#pos{
+  position: absolute;
+  display: block;
+  background-color: green;
+  color:white;
+  top:5px;
+  left: 5px;
+}
 #main_content:after{
   content: "";
   display: block;
   clear: both;
+}
+
+
+/* Подвал */
+#footer {
+  background: url("../imgs/png/footer_bg.png") center top repeat-x;
+  height: 64px;
 }
