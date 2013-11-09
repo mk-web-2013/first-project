@@ -1,11 +1,21 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/Zd2E9abXLFGSr9G3YK2MsO3ikv6SQm_yYbVf3nddkGw.woff) format('woff');
+}
+body{
+  font-family: sans-serif;
+}
 div{
   /*border: 1px solid black;*/
 }
 #header > div,
 #main_content > div,
 #footer > div{
-  width: 1016px;
+  width: 936px;
   margin: 0px auto;
+  padding-right: 80px;
 }
 #header{
   background: url("../imgs/png/header_bg.png") center top no-repeat;
@@ -18,6 +28,8 @@ div{
 
 #header .logo{
   float: left;
+  margin-top: 42px;
+  margin-left: 17px;
 }
 #header:after{
   content: "";
@@ -26,6 +38,7 @@ div{
 }
 #header .menus{
   margin-left: 300px;
+  padding-top: 20px;
 }
 #header .menus > div{
   clear: right;
@@ -55,6 +68,7 @@ div{
 #header .main-menu a{
   color: #fff;
   text-decoration: none;
+  font-family: 'Roboto Condensed';
 }
 
 #header .main-menu li,
@@ -66,6 +80,13 @@ div{
 #header .common-menu li:first-child{
   /*border-left: none;*/
   background: none;
+}
+#header .common-menu a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #898989;
+  font-family: sans-serif;
+  font-size: 11px;
 }
 #header .main-menu li{
   padding-top: 5px;
@@ -79,6 +100,9 @@ div{
   color: #3460a0;
   background-color: #fff;
   border-radius: 5px 5px 0px 0px; 
+}
+#header .main-menu li:hover li > a{
+  border-radius: 5px; 
 }
 #header .main-menu > ul{
   background: url("../imgs/png/main-menu-bg.png") left top repeat-x;
@@ -102,70 +126,107 @@ div{
   left: 98%;
   top: 0px
 }
+#curr-page-description,
 #curr-page{
   position: absolute;
   bottom: 0px;
+}
+#curr-page{
   left: 0px;
-  width: 211px;
-  height: 94px;
+  width: 151px;
+  height: 56px;
+  padding: 19px 30px;
+  text-align: right;
   background: url("../imgs/png/header_curr_page_bg.png") left center no-repeat;
+}
+#curr-page > h2{
+  color: #baf009;
+  text-transform: uppercase;
+  padding: 7px;
+}
+#curr-page > h2 + div{
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+#curr-page-description{
+  left: 198px;
+  height: 69px;
+  right: 80px;
+  padding-left: 157px;
+  background: #e0edf3 url("../imgs/jpg/curr_page_img.jpg") no-repeat left top;
+  
 }
 /* ----------- */
 
+#main_content > div{
+  background: url("../imgs/png/sidebar-bg-gradient.png") 178px top repeat-y;
+    position: relative;
+}
+#main_content > div:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#right-panel{
+  position: absolute;
+  right: 0px;
+  width: 80px;
+}
+#right-panel > div{
+  position: fixed;
+  top: 360px;
+  width: 80px;
+  background-color: #7abbf5;
+  border-radius: 5px;
+}
 #sidebar{
   float: left;
   width: 158px;
-  background-color: aquamarine;
   margin-right: 10px;
   padding: 25px 13px 25px 25px;
+  text-align: right;
 }
 #sidebar .menu{
   position: relative;
 }
-#mi5{
-  background: #3460a0;
-  color: #fff;
-  position: relative;
-  left: 30px;
-  bottom: 50px;
-  z-index: 4;
+#sidebar .menu li{
+  padding: 5px;
 }
-#mi7{
-  background: yellow;
-  color: blue;
-  position: fixed;
-  left: 30px;
-  right: 150px;
-  bottom: 50px;
-  width: 100px;
-  z-index: 4;
+#sidebar .menu li,
+#sidebar .menu li a{
+  background: url("../imgs/png/bullets.png") no-repeat left -20px;
 }
-#mi9{
-  background: blueviolet;
-  color: #fff;
-  position: absolute;
-  left: 30px;
-  right: 150px;
-  bottom: 50px;
-  width: 100px;
-  z-index: 4;
+#sidebar .menu li a{
+  color: #4a4a4a;
+  text-decoration: none;
+  background-position: right -80px;
+  padding-right: 10px;
+}
+#sidebar .menu li:hover ,
+#sidebar .menu li.active {
+  background-position: left 10px;
+}
+#sidebar .menu li:hover > a,
+#sidebar .menu li.active > a{
+  color: #3988c8;
+  background-position: right -50px;
+}
+#sidebar .menu li.active > a{
+  font-weight: bold;
+}
+#sidebar .menu li + li{
+  border-top: 1px dotted #cecbcb;
 }
 
 #content{
   overflow: hidden;
-  margin: 10px;
+  padding: 10px;
 }
 /*#main_content{
   overflow: hidden;
 }*/
-#pos{
-  position: absolute;
-  display: block;
-  background-color: green;
-  color:white;
-  top:5px;
-  left: 5px;
-}
+
 #main_content:after{
   content: "";
   display: block;
