@@ -239,3 +239,22 @@ div{
   background: url("../imgs/png/footer_bg.png") center top repeat-x;
   height: 64px;
 }
+
+/* Slider */
+#slider{
+  position: relative;
+  overflow: hidden;
+  width: 330px;
+  height: 110px;
+  border: 2px solid blue;
+}
+#slides{
+  position: absolute;
+  width: 770px;
+}
+.slide{
+  width: 100px;
+  height: 100px;
+  border: 5px solid green;
+  display: inline-block;
+}
