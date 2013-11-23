@@ -28,10 +28,13 @@ setInterval(function() {
     if (slides_left >= slide_width * slide_index) {// если доехали до границы текущего блока рекламы
       access_to_move = false; // запретить движение
       slide_index++;// сделать текущим следующий блок рекламы
-      if(slide_index>slides_count){// если текущий блок рекламы больше, чем их количество
+      if((slide_index+3)>slides_count){// если текущий блок рекламы больше, чем их количество
+        setTimeout(function(){
         slide_index = 1;// переключаем текущий слайд на первый
         slides_left = 0;// устанавливаем смещение в 0px
-        slides.style.left = slides_left + 'px';// применяем смещение
+        slides.style.left = slides_left + 'px';
+      },1000);
+        // применяем смещение
       }
     } else {// если еще не доехали до границы текущего блока
       slides_left += 2;// увеличиваем смещение на +2px
