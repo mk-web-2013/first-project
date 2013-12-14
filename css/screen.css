@@ -222,6 +222,7 @@ div{
 #content{
   overflow: hidden;
   padding: 10px;
+  border: 1px dotted darkgrey;
 }
 /*#main_content{
   overflow: hidden;
@@ -283,6 +284,7 @@ li.cont-sub-menu:hover:after{
 .box{
   border: 3px solid #ddd;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 .box-header{
   padding: 5px;
@@ -291,4 +293,7 @@ li.cont-sub-menu:hover:after{
 label.requare:before{
   content: "*";
   color: red;
+}
+#sidebar > div.box:first-child{
+  display: none;
 }
