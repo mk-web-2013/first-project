@@ -46,6 +46,7 @@ div{
 #header .menus > div > ul{
   float: right;
   position: relative;
+  z-index: 99;
 }
 #header .main-menu ul{
   border-radius: 5px;
@@ -111,6 +112,7 @@ div{
   position: absolute;
   display: none;
   background: #1A447E;
+  top: 100%;
 /*  left: 0px;
   right: 0px;
   text-align: center;*/
