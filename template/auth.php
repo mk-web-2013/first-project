@@ -9,7 +9,7 @@
 </form>
 <?php } else{ ?>
 <form method="post" enctype="multipart/form-data">
-  <label>Login:<input type="text" id="mylogin" name="mylogin"></label>
+  <label class="requare">Login:<input type="text" id="mylogin" name="mylogin"></label>
   <label for="mypass">Пароль:</label><input type="password" id="mypass" name="mypass">
   <input type="submit" value="Войти" />
 </form>
