@@ -6,17 +6,16 @@
     </div>
   </div>
   <?php include DIR_TEMPLATE . 'menu.php'; ?>
-  <div id="login" class="box">
-    <div class="box-header">Форма входа</div>
+  <?php if(isset($_SESSION['role'])) {?>
+  <div id="avatar_form" class="box">
+    <div class="box-header">Обновление аватара</div>
     <div class="box-content" >
-      <form>
-        <label class="requare">Имя:</label><input type="text" name="firstname" />
-        <label class="requare">Фамилия:</label><input type="text" name="lastname" />
-        <label>Пароль:</label><input type="password" name="pass" />
-        <label>Дата рождения:</label><input type="text" name="birthdate" />
-        <input type="submit" value="Войти" />
+      <form method="post" enctype="multipart/form-data">
+        <label class="requare">Аватар:</label><input type="file" name="ava" />
+        <input type="submit" value="Обновить" />
       </form>
     </div>
   </div>
+  <?php } ?>
   <?php include './template/auth.php'; ?>
 </div>

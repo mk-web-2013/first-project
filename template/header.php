@@ -1,5 +1,7 @@
 <div id="header">
   <div>
+    <h1>ВЦ: <?php if(isset($_COOKIE['vc'])){echo $_COOKIE['vc'];} ?></h1>
+    <h2><?php if(isset($_SESSION['a'])){echo $_SESSION['a'];$_SESSION['b']='abcц';} ?></h2>
     <div class="logo">
       <img src="<?php echo DIR_TEMPLATE; ?>imgs/png/logo.png" alt="logo asa web" />
     </div>
@@ -23,8 +25,8 @@
                 <a href="#">Пункт 1.3</a>
               </li>
             </ul>
-            <a href="/?route=home">Home</a>
-          </li><li id="mmi2" class="mi"><a href="/?route=aboutus">About Us</a></li><li id="mmi3" class="mi"><a href="#">News</a>
+            <a href="?route=home">Home</a>
+          </li><li id="mmi2" class="mi"><a href="?route=aboutus">About Us</a></li><li id="mmi3" class="mi"><a href="#">News</a>
             <ul>
               <li>
                 <a href="#">Пункт 3.1</a>
@@ -50,7 +52,7 @@
                 <a href="#">Пункт 3.5</a>
               </li>
             </ul>
-          </li><li id="mmi4" class="mi"><a href="#">Recruit</a></li><li id="mmi5" class="mi"><a href="/?route=contacts">Contacts</a></li>
+          </li><li id="mmi4" class="mi"><a href="#">Recruit</a></li><li id="mmi5" class="mi"><a href="?route=contacts">Contacts</a></li>
         </ul>
       </div>
     </div>
