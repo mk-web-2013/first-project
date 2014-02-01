@@ -299,3 +299,30 @@ label.requare:before{
 #sidebar > div.box:first-child{
   display: none;
 }
+.users{
+  border-collapse: collapse;
+}
+.users tr:nth-child(odd){
+  background: #efefef;
+}
+.users td{
+  border: 1px solid lightblue;
+  padding: 10px;
+}
+#debug-panel{
+  position: fixed;
+  border: 1px solid lightgray;
+  width: 250px;
+  right: -200px;
+  top: 150px;
+  font-size: 12px;
+  padding: 10px;
+  font-family: 'Courier New';
+  overflow: auto;
+  background: rgba(255,255,255,0.6);
+  box-shadow: -2px 3px 7px #999;
+}
+#debug-panel:hover{
+  right: 0px;
+  background: rgba(255,255,255,0.9);
+}

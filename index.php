@@ -1,8 +1,8 @@
 <?php
 session_start();
-require './controller/user_auth.php';
 setcookie('vc', '3');
 require_once './config.php';
+require './controller/user_auth.php';
 include './controller/ava_update.php';
 require_once './data/pages.php';
 require_once './router.php';
