@@ -17,5 +17,6 @@
     </div>
   </div>
   <?php } ?>
+  <?php include './template/feedback.php'; ?>
   <?php include './template/auth.php'; ?>
 </div>
